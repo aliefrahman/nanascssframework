@@ -13,10 +13,10 @@ html {
 }
 // Default body styles
 body {
-  color: $color-secondary;
-  font-family: "Plus Jakarta Sans", 'Helvetica Neue', 'Helvetica', 'Arial', serif;
+  color: $color-seagreen;
+  font-family: 'Nunito','Plus Jakarta Sans', 'Helvetica Neue', 'Helvetica', 'Arial', serif;
   font-size: 1.6em; // Currently ems cause chrome bug misinterpreting rems on body element
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: .01em;
   line-height: 1.6;
 }

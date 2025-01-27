@@ -1,0 +1,82 @@
+// Button
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  background-color: $color-seagreen;
+  border: 0.1rem solid $color-seagreen;
+  border-radius: 1.1rem;
+  color: $color-white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  height: 4rem;
+  letter-spacing: 0.1rem;
+  line-height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  &:focus,
+  &:hover {
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+    color: $color-white;
+    outline: 0;
+  }
+   
+  &[disabled] {
+    cursor: default;
+    opacity: 0.5;
+
+    &:focus,
+    &:hover {
+      background-color: $color-seagreen;
+      border-color: $color-seagreen;
+    }
+  }
+
+  &.button-outline {
+    background-color: transparent;
+    color: $color-seagreen;
+
+    &:focus,
+    &:hover {
+      background-color: transparent;
+      border-color: $color-secondary;
+      color: $color-secondary;
+    }
+
+    &[disabled] {
+      &:focus,
+      &:hover {
+        border-color: inherit;
+        color: $color-seagreen;
+      }
+    }
+  }
+
+  &.button-clear {
+    background-color: transparent;
+    border-color: transparent;
+    color: $color-seagreen;
+
+    &:focus,
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: $color-secondary;
+    }
+
+    &[disabled] {
+      &:focus,
+      &:hover {
+        color: $color-seagreen;
+      }
+    }
+  }
+}
