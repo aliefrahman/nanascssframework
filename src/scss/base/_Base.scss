@@ -1,23 +1,25 @@
 // Base
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-html {
-  font-size: 100%;
-  box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
-}
-// Default body styles
-body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Nunito','Plus Jakarta Sans', 'Helvetica Neue', 'Helvetica', 'Arial', serif;
-  //font-size: 1rem; // Currently ems cause chrome bug misinterpreting rems on body element
-  font-weight: 600;
-  letter-spacing: .01rem;
-  line-height: 1.6;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+// Default body styles
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
