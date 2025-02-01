@@ -1,7 +1,7 @@
 {
   "name": "nenascss",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "build:css": "sass src/scss/main.scss dist/styles.css --style compressed",
     "watch:css": "sass --watch src/scss/main.scss dist/styles.css"
