@@ -20,39 +20,6 @@ Install the package using npm:
 npm install nenascss
 ```
 
-Collecting workspace information
-
-I'll help you generate a
-
-README.md
-
-based on the
-
-package.json
-
-content. Here's a comprehensive README:
-
-````markdown
-# nenascss
-
-A simple CSS framework built with Sass.
-
-## Features
-
-- Mobile-first design
-- Responsive grid system
-- Built with Sass/SCSS
-- Customizable components
-- Modern front-end workflow
-
-## Installation
-
-Install the package using npm:
-
-```bash
-npm install nenascss
-```
-````
 ## Usage
 
 ### Build CSS
