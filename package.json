@@ -6,10 +6,19 @@
     "build:css": "sass src/scss/main.scss dist/styles.css --style compressed",
     "watch:css": "sass --watch src/scss/main.scss dist/styles.css"
   },
-  "keywords": [],
+  "keywords": [
+    "css-framework",
+    "css",
+    "sass",
+    "scss",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "web"
+  ],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "A simple CSS framework built with Sass.",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.5.1",
