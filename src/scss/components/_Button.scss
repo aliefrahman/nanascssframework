@@ -1,82 +1,43 @@
 // Button
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-.button,
-button,
-input[type='button'],
-input[type='reset'],
-input[type='submit'] {
-  background-color: $color-seagreen;
-  border: 0.1rem solid $color-seagreen;
-  border-radius: 0.8rem;
-  color: $color-white;
-  cursor: pointer;
+.nns-button {
   display: inline-block;
-  font-size: 1rem;
-  font-weight: 600;
-  height: 2.8rem;
-  letter-spacing: 0.1rem;
-  line-height: 2.8rem;
-  padding: 0 1.6rem;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
   text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-  &:focus,
-  &:hover {
-    background-color: $color-secondary;
-    border-color: $color-secondary;
-    color: $color-white;
-    outline: 0;
-  }
-   
-  &[disabled] {
-    cursor: default;
-    opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+  border: none;
 
-    &:focus,
-    &:hover {
-      background-color: $color-seagreen;
-      border-color: $color-seagreen;
-    }
-  }
+  @each $name, $color in $colors {
+    &--#{$name} {
+      background-color: $color;
+      color: white;
 
-  &.button-outline {
-    background-color: transparent;
-    color: $color-seagreen;
-
-    &:focus,
-    &:hover {
-      background-color: transparent;
-      border-color: $color-secondary;
-      color: $color-secondary;
-    }
-
-    &[disabled] {
-      &:focus,
       &:hover {
-        border-color: inherit;
-        color: $color-seagreen;
+        background-color: darken($color, 10%);
+      }
+    }
+
+    &--outline-#{$name} {
+      background-color: transparent;
+      border: 2px solid $color;
+      color: $color;
+
+      &:hover {
+        background-color: $color;
+        color: white;
       }
     }
   }
+}
 
-  &.button-clear {
-    background-color: transparent;
-    border-color: transparent;
-    color: $color-seagreen;
-
-    &:focus,
-    &:hover {
-      background-color: transparent;
-      border-color: transparent;
-      color: $color-secondary;
-    }
-
-    &[disabled] {
-      &:focus,
-      &:hover {
-        color: $color-seagreen;
-      }
-    }
+// Responsif untuk Mobile
+@media (max-width: 768px) {
+  .nns-button {
+    padding: 8px 16px;
+    font-size: 14px;
   }
 }
