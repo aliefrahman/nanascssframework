@@ -4,10 +4,12 @@
 
 // Modules
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-@import 'base/Color';
-@import 'variables/Variables';
-@import 'base/Base';
+
+@import 'color';
+@import 'variables';
+@import 'base';
 
 
-@import 'components/Button';
-@import 'layout/Layout';
+@import 'button';
+@import 'typography';
+@import 'layout';
