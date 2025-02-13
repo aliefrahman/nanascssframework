@@ -17,7 +17,7 @@ A simple CSS framework built with Sass.
 Install the package using npm:
 
 ```bash
-npm install nenascss
+npm install nanascssframework
 ```
 
 ## Usage
